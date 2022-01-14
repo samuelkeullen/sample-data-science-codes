@@ -180,5 +180,75 @@ print("New Numpy Array mapped from the above array, but with sin:")
 print(y)
 print("")
 #horizontal is X and vertical is Y
-plt.plot(x,y)
-plt.show()
+#plt.plot(x,y)
+#plt.show()
+
+
+
+#2D NUMPY ARRAYS
+
+#the baiscs and array creation in 2d
+#in 2d lists, the first value in shape corresponds to the number of rows, and de second corresponds to number of columsn
+a = [[11,12,13], [21,22,23], [31,32,33]]
+
+A = np.array(a)#a rectangle array
+get_type = type(A) #get the type of the numpy array
+get_dtype = A.dtype #get the dtype of the numpy array
+get_size = A.size #get the lenght of the numpy array
+get_ndim = A.ndim #get the dimensions of the numpy array, in this case, as a ndarray, is one dimensional
+get_shape = A.shape #get the shape of the array in each dimension, separated by a tuple
+
+m1 = "The type of the Numpy array is:\n{}\n".format(get_type)
+m2 = "The dtype of the Numpy array is:\n{}\n".format(get_dtype)
+m3 = "The lenght of the Numpy array is:\n{}\n".format(get_size)
+m4 = "The number of dimensions of the Numpy array is:\n{}\n".format(get_ndim)
+m5 = "The shape of the Numpy array is:\n{}\n".format(get_shape)
+
+print(m1)
+print(m2)
+print(m3)
+print(m4)
+print(m5)
+print("")
+
+#Sum matrix
+X = np.array([ [1,0], [0,1] ])
+Y = np.array([ [2,1], [1,2] ])
+
+Z = X+Y;
+
+print("The Sum of matrices is:")
+print(Z)
+print("")
+
+#Multiply matrix by 2
+Y = np.array([ [2,1], [1,2] ])
+
+Z = 2*Y;
+
+print("The Multiply by 2 of matrices is:")
+print(Z)
+print("")
+
+#hadamart for 2D matrices
+X = np.array([ [1,0],[0,1] ])
+Y = np.array([ [2,1],[1,2] ])
+Z = X*Y;
+
+print("The hadamard product of the matrices:")
+print(Z)
+print("")
+
+#matrix multiplication
+A = np.array([ [0,1,1], [1,0,1]] )
+B = np.array([ [1,1], [1,1], [-1,1] ])
+C = np.dot(A,B)#with the dot method, we can multiply matrices
+
+print("The Multiply of matrices is:")
+print(C)
+print("")
+
+# Indexing and Slicing in 2D
+
+# Basic Operations in 2D
+
